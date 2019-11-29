@@ -34,3 +34,6 @@ GOOGLE COLABORATORY (Image) VERSION ( [link](https://colab.research.google.com/d
 =============
 
 *NOTE: MY CODE ISN'T OPTIMIZED. I PUT THIS TOGETHER WHILE HALF ASLEEP. DON'T JUDGE ME.
+
+- Help is greatly appreciated.
+
