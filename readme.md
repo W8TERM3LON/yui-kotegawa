@@ -3,6 +3,10 @@
 This project uses [Yahoo Open NSFW](https://github.com/yahoo/open_nsfw) to detect images that contain nsfw content. The docker image is from [nsfw-docker](https://github.com/nikos-glikis/nsfw-docker)
 =============
 
+<p align="center">
+  <img src="https://fuwafuwa.wtf/smug.jpeg">
+</p>
+
 api.json
 =============
 - REPLACE '__REPLACE WITH ACCESS TOKEN__' with your own API key from https://anilist.co/api/v2/oauth/authorize?client_id=2861&response_type=token
