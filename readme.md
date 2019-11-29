@@ -1,6 +1,6 @@
 [![link](https://img.shields.io/badge/Python-3.8.0-blue?style=flat-square&logo=python)](https://www.python.org/downloads/) [![link](https://img.shields.io/badge/Caffe-1.0.0-red?style=flat-square&logo=caffe)](https://caffe.berkeleyvision.org/)
 
-This project uses [Yahoo Open NSFW](https://github.com/yahoo/open_nsfw) to detect images that contain pornographic content. The docker image is from [nsfw-docker](https://github.com/nikos-glikis/nsfw-docker)
+This project uses [Yahoo Open NSFW](https://github.com/yahoo/open_nsfw) to detect images that contain nsfw content. The docker image is from [nsfw-docker](https://github.com/nikos-glikis/nsfw-docker)
 =============
 
 api.json
