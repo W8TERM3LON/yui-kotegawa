@@ -1,5 +1,8 @@
 [![link](https://img.shields.io/badge/Python-3.8.0-blue?style=flat-square&logo=python)](https://www.python.org/downloads/)
 
+This project uses [Yahoo Open NSFW](https://github.com/yahoo/open_nsfw) to detect images that contain pornographic content. The docker image is from [nsfw-docker](https://github.com/nikos-glikis/nsfw-docker)
+=============
+
 api.json
 =============
 - REPLACE __REPLACE WITH ACCESS TOKEN__ with your own API key from https://anilist.co/api/v2/oauth/authorize?client_id=2861&response_type=token
