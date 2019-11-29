@@ -5,7 +5,7 @@ This project uses [Yahoo Open NSFW](https://github.com/yahoo/open_nsfw) to detec
 
 api.json
 =============
-- REPLACE __REPLACE WITH ACCESS TOKEN__ with your own API key from https://anilist.co/api/v2/oauth/authorize?client_id=2861&response_type=token
+- REPLACE '__REPLACE WITH ACCESS TOKEN__' with your own API key from https://anilist.co/api/v2/oauth/authorize?client_id=2861&response_type=token
 
 FUNCTIONAL
 =============
