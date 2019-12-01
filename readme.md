@@ -15,6 +15,13 @@ FUNCTIONAL
 =============
 - Scan through profile avatar and rate the avatar on a scale from 0-100% NSFW. (still need to automate page scanning, need to manually enter page number for now.)
 
+- If done correctly it should display something like this. (User ID hidden for privacy.)
+<p align="center">
+  <img src="https://fuwafuwa.wtf/results.png">
+ </p>
+- Anything above a 70% is most likely NSFW and will show "^^IS MOST LIKELY NSFW AT %!!^^"
+- Anything below a 70% is most likely not NSFW will show "^^IS % NSFW.^^"
+
 WORK IN PROGRESS (TO SOME EXTENT FUNCTIONAL)
 =============
 - profile_about_name_swear.py pulls words from words.json and looks for them in profile name and about me. MUST ENTER PAGE NUMBER TO WORK.
@@ -30,7 +37,7 @@ TO DO
 - Scan for bots.
 - Port to discord bot when everything is finished.
 
-GOOGLE COLABORATORY (Image) VERSION ( [link](https://colab.research.google.com/drive/1TbAelG8k6txJD_YR66h-_5XxXCuEcCJG) )
+GOOGLE COLABORATORY VERSION (to show all profile images on one page.) ( [link](https://colab.research.google.com/drive/1TbAelG8k6txJD_YR66h-_5XxXCuEcCJG) )
 =============
 
 *NOTE: MY CODE ISN'T OPTIMIZED. I PUT THIS TOGETHER WHILE HALF ASLEEP. DON'T JUDGE ME.
