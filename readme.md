@@ -1,6 +1,6 @@
 [![link](https://img.shields.io/badge/Python-3.8.0-blue?style=flat-square&logo=python)](https://www.python.org/downloads/) [![link](https://img.shields.io/badge/Caffe-1.0.0-red?style=flat-square&logo=caffe)](https://caffe.berkeleyvision.org/)
 
-This project uses a re-trained version of [Yahoo Open NSFW](https://github.com/yahoo/open_nsfw) to detect images that contain nsfw content(with 400GB of additional training on drawn NSFW posts, therefore this version is more suited at detecting anime/drawn NSFW posts). The docker image is based off the image used in [nsfw-docker](https://github.com/nikos-glikis/nsfw-docker)
+This project uses a re-trained version of [Yahoo Open NSFW](https://github.com/yahoo/open_nsfw) to detect images that contain nsfw content(with 400GB of additional training on drawn NSFW pictures, such as hentai.). The docker image is based off the image used in [nsfw-docker](https://github.com/nikos-glikis/nsfw-docker)
 =============
 
 <p align="center">
