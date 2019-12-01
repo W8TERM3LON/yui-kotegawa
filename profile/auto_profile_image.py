@@ -71,6 +71,6 @@ while staticnumber < userinput:
             else:
                 print("Is " + str(floattwo) + "% NSFW.")
             nq = nq+1
-    time.sleep(5)
+    time.sleep(1)
     staticnumber = staticnumber+1
     print('Page:' + str(staticnumber))
