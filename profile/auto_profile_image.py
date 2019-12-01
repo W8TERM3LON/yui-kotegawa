@@ -12,7 +12,7 @@ accessToken = json.loads(open(os.path.join('', 'api.json')).read())
 #user specified page number
 staticnumber = int(input('Enter start page number -->'))
 userinput = int(input('Enter page number to stop at -->'))
-print('------STARTING------')
+print('         ------STARTING------')
 while staticnumber < userinput:
 
     no = staticnumber
@@ -74,5 +74,7 @@ while staticnumber < userinput:
             nq = nq+1
     time.sleep(1)
     staticnumber = staticnumber+1
-    print('                 Page:' + str(staticnumber))
-print('------FINISHED------')
+    if staticnumber == userinput:
+        print('         ------FINISHED------')
+    else:
+        print('         Page: ' + str(staticnumber))
