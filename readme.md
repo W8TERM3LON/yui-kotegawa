@@ -13,15 +13,16 @@ api.json
 
 FUNCTIONAL
 =============
-- Scan through profile avatar and rate the avatar on a scale from 0-100% NSFW. (still need to automate page scanning, need to manually enter page number for now.)
+- auto_profile_image.py
+  - Scan through profile avatar and rate the avatar on a scale from 0-100% NSFW. (still need enter start page and end page.)
 
-- Anything above a 70% is most likely NSFW and will show "^^IS MOST LIKELY NSFW AT %!!^^"
-- Anything below a 70% is most likely not NSFW will show "^^IS % NSFW.^^"
-- Users that have not changed their avatars from the default one, will not be searched by the bot, and will not show up in the output either.
-- If done correctly it should display something like this. (User ID hidden for privacy.)
-<p align="center">
-  <img src="https://fuwafuwa.wtf/results.png">
- </p>
+  - Anything above a 70% is most likely NSFW and will show "^^IS MOST LIKELY NSFW AT %!!^^"
+  - Anything below a 70% is most likely not NSFW will show "^^Is % NSFW.^^"
+  - Users that have not changed their avatars from the default one, will not be searched by the bot, and will not show up in the output either.
+  - If done correctly it should display something like this. (User ID hidden for privacy.)
+  <p align="center">
+    <img src="https://fuwafuwa.wtf/results.png">
+   </p>
 
 WORK IN PROGRESS (TO SOME EXTENT FUNCTIONAL)
 =============
