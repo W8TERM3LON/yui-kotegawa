@@ -10,8 +10,8 @@ url = "https://graphql.anilist.co/"
 accessToken = json.loads(open(os.path.join('', 'api.json')).read())
 
 #user specified page number
-staticnumber = 1
-userinput = int(input('Enter max page number -->'))
+staticnumber = int(input('Enter start page number -->'))
+userinput = int(input('Enter page number to stop at -->'))
 print('------STARTING------')
 while staticnumber < userinput:
 
@@ -68,9 +68,9 @@ while staticnumber < userinput:
             floattwo = round(floatscore, 2) * 100
             floattwo = int(floattwo)
             if floattwo >= 70:
-                print("IS MOST LIKELY NSFW AT " + str(floattwo) + "%.")
+                print("^^IS MOST LIKELY NSFW AT " + str(floattwo) + "%!!^^")
             else:
-                print("Is " + str(floattwo) + "% NSFW.")
+                print("^^Is " + str(floattwo) + "% NSFW.^^")
             nq = nq+1
     time.sleep(1)
     staticnumber = staticnumber+1
