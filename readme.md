@@ -1,7 +1,8 @@
 [![link](https://img.shields.io/badge/Python-3.8.0-blue?style=flat-square&logo=python)](https://www.python.org/downloads/) [![link](https://img.shields.io/badge/Caffe-1.0.0-red?style=flat-square&logo=caffe)](https://caffe.berkeleyvision.org/)
 
-This is a Discord bot used to make AniList mods' lives easier. By using a neural network re-trained off of [Yahoo's Open NSFW](https://github.com/yahoo/open_nsfw) caffe model, it helps mods narrow down users that have NSFW content within their profiles.(The caffe model currently used has been trained on an additional 400GB of drawn NSFW images, such as hentai.). The docker image used is based off the one used in [nsfw-docker](https://github.com/nikos-glikis/nsfw-docker).
+This is a Discord bot used to make AniList mods' lives easier. 
 =============
+By using a neural network re-trained off of [Yahoo's Open NSFW](https://github.com/yahoo/open_nsfw) caffe model, it helps mods narrow down users that have NSFW content within their profiles.(The caffe model currently used has been trained on an additional 400GB of drawn NSFW images, such as hentai.). The docker image used is based off the one used in [nsfw-docker](https://github.com/nikos-glikis/nsfw-docker).
 
 <p align="center">
   <img src="https://fuwafuwa.wtf/smug.jpeg">
