@@ -11,7 +11,8 @@ accessToken = json.loads(open(os.path.join('', 'api.json')).read())
 
 #user specified page number
 staticnumber = 1
-userinput = int(input('Enter page number -->'))
+userinput = int(input('Enter max page number -->'))
+print('------STARTING------')
 while staticnumber < userinput:
 
     no = staticnumber
@@ -67,10 +68,11 @@ while staticnumber < userinput:
             floattwo = round(floatscore, 2) * 100
             floattwo = int(floattwo)
             if floattwo >= 70:
-                print("Is most likely NSFW at " + str(floattwo) + "%.")
+                print("IS MOST LIKELY NSFW AT " + str(floattwo) + "%.")
             else:
                 print("Is " + str(floattwo) + "% NSFW.")
             nq = nq+1
     time.sleep(1)
     staticnumber = staticnumber+1
-    print('Page:' + str(staticnumber))
+    print('                 Page:' + str(staticnumber))
+print('------FINISHED------')
