@@ -1,6 +1,6 @@
 [![link](https://img.shields.io/badge/Python-3.8.0-blue?style=flat-square&logo=python)](https://www.python.org/downloads/) [![link](https://img.shields.io/badge/Caffe-1.0.0-red?style=flat-square&logo=caffe)](https://caffe.berkeleyvision.org/)
 
-This project uses a re-trained version of [Yahoo Open NSFW](https://github.com/yahoo/open_nsfw) to detect images that contain nsfw content(with 400GB of additional training on drawn NSFW pictures, such as hentai.). The docker image is based off the image used in [nsfw-docker](https://github.com/nikos-glikis/nsfw-docker)
+This is a Discord bot used to make AniList mods' lives easier. By using a neural network re-trained off of [Yahoo's Open NSFW](https://github.com/yahoo/open_nsfw) caffe model, it helps mods narrow down users that have NSFW content within their profiles.(The caffe model currently used has been trained on an additional 400GB of drawn NSFW images, such as hentai.). The docker image used is based off the one used in [nsfw-docker](https://github.com/nikos-glikis/nsfw-docker).
 =============
 
 <p align="center">
@@ -10,6 +10,7 @@ This project uses a re-trained version of [Yahoo Open NSFW](https://github.com/y
 api.json
 =============
 - REPLACE '__REPLACE WITH ACCESS TOKEN__' with your own API key from https://anilist.co/api/v2/oauth/authorize?client_id=2861&response_type=token
+  - Note: Private profiles will not be visible to non-mod users. So to see private profiles you would need to somehow aquire a mod's API key.
 
 FUNCTIONAL
 =============
