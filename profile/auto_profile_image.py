@@ -60,7 +60,6 @@ while staticnumber < userinput:
             nq = nq+1
         else:
             idnum = idnum[0].replace('id:','')
-            print('https://anilist.co/user/' + idnum)
             page = urllib.request.urlopen("http://127.0.0.1:7981/" + result).read().decode('utf-8')
             page = page.replace("b''","")
             #page = page.replace('.','')
@@ -68,9 +67,16 @@ while staticnumber < userinput:
             floattwo = round(floatscore, 2) * 100
             floattwo = int(floattwo)
             if floattwo >= 70:
+                print('https://anilist.co/user/' + idnum)
                 print("^^IS MOST LIKELY NSFW AT " + str(floattwo) + "%!!^^")
             else:
-                print("^^Is " + str(floattwo) + "% NSFW.^^")
+                if floattwo >= 50:
+                    print('https://anilist.co/user/' + idnum)
+                    print("Take a look." + str(floattwo) + "%")
+                else:
+                    pass
+                    #print('https://anilist.co/user/' + idnum)
+                    #print("^^Is " + str(floattwo) + "% NSFW.^^")
             nq = nq+1
     time.sleep(1)
     staticnumber = staticnumber+1
