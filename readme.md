@@ -11,7 +11,7 @@ By using a neural network re-trained off of [Yahoo's Open NSFW](https://github.c
 api.json
 =============
 - REPLACE '__REPLACE WITH ACCESS TOKEN__' with your own API key from https://anilist.co/api/v2/oauth/authorize?client_id=2861&response_type=token
-  - Note: Private profiles will not be visible to non-mod users. So to see private profiles you would need to somehow aquire a mod's API key.
+  - Note: Private profiles will not be visible to non-mod users.
 
 FUNCTIONAL
 =============
