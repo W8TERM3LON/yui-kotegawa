@@ -44,7 +44,7 @@ TO DO
 GOOGLE COLABORATORY VERSION (to show all profile images on one page.) ( [link](https://colab.research.google.com/drive/1TbAelG8k6txJD_YR66h-_5XxXCuEcCJG) )
 =============
 
-*NOTE: MY CODE ISN'T OPTIMIZED. I PUT THIS TOGETHER WHILE HALF ASLEEP. DON'T JUDGE ME.
+*I'm a n00b. Stop judging me.
 
 - Help is greatly appreciated.
 - I forgot about the json libary so I did all the parsing manually, using the replace function, and search functions. I'll update it to use json when I feel like it.
