@@ -47,4 +47,4 @@ GOOGLE COLABORATORY VERSION (to show all profile images on one page.) ( [link](h
 *NOTE: MY CODE ISN'T OPTIMIZED. I PUT THIS TOGETHER WHILE HALF ASLEEP. DON'T JUDGE ME.
 
 - Help is greatly appreciated.
-- I forgot about the json libary so I did all the parsing myself. Heh......
+- I forgot about the json libary so I did all the parsing manually, using the replace function, and search functions. I'll update it to use json when I feel like it.
