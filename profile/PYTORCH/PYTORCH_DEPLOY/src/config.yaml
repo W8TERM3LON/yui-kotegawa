@@ -1,0 +1,17 @@
+title: Images Classifier
+description: Classify images using deep learning
+about:
+
+
+  This is a Images Classifier using Deep Learning built on top of Pytorch.
+
+
+
+sampleImages:
+  - name: random image
+    url: https://fuwafuwa.wtf/image.php
+  - name: sushi
+    url: https://upload.wikimedia.org/wikipedia/commons/6/60/Sushi_platter.jpg
+  - name: random Padoru
+    url: https://fuwafuwa.wtf/padoru.php
+
