@@ -10,12 +10,12 @@ url = "https://graphql.anilist.co/"
 accessToken = json.loads(open(os.path.join('', 'api.json')).read())
 
 #user specified page number
-staticnumber = int(input('Enter start page number -->'))
-userinput = int(input('Enter page number to stop at -->'))
+startpage = int(input('Enter start page number -->'))
+stoppage = int(input('Enter page number to stop at -->'))
 print('         ------STARTING------')
-while staticnumber < userinput:
+while startpage < stoppage:
 
-    no = staticnumber
+    no = startpage
 
     #POST request data
     payload = "{\"query\":\"query ($p: Int) {\\n  Page(page: $p) {\\n    users(sort: ID_DESC) {\\n      id\\n      avatar{\\n        large\\n      }\\n      \\n    }\\n  }\\n}\",\"variables\":{\"p\":" + str(no) + "}}"
@@ -47,7 +47,7 @@ while staticnumber < userinput:
 
     #print(rdata)
 
-    #loop 50 times with +1 each time
+    #loop 50 times with +1 each cycle, because max entries per page is 50.
     nq = 1
     while nq < 49:
         #set image as rdata
@@ -72,15 +72,16 @@ while staticnumber < userinput:
             else:
                 if floattwo >= 50:
                     print('https://anilist.co/user/' + idnum)
-                    print("Take a look." + str(floattwo) + "%")
+                    print("^Take a look. " + str(floattwo) + "%")
                 else:
+                    #if you want to print all results, comment out pass and uncomment out the two lines under pass.
                     pass
                     #print('https://anilist.co/user/' + idnum)
                     #print("^^Is " + str(floattwo) + "% NSFW.^^")
             nq = nq+1
     time.sleep(1)
-    staticnumber = staticnumber+1
-    if staticnumber == userinput:
+    startpage = startpage+1
+    if startpage == stoppage:
         print('         ------FINISHED------')
     else:
-        print('         Page: ' + str(staticnumber))
+        print('         Page: ' + str(startpage))
