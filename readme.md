@@ -1,8 +1,7 @@
 [![link](https://img.shields.io/badge/Python-3.8.0-blue?style=flat-square&logo=python)](https://www.python.org/downloads/) [![link](https://img.shields.io/badge/Caffe-1.0.0-red?style=flat-square&logo=caffe)](https://caffe.berkeleyvision.org/)
 
-This is a Discord bot used to make AniList mods' lives easier. 
+A Discord bot used to make AniList mods' lives easier. 
 =============
-By using a neural network re-trained off of [Yahoo's Open NSFW](https://github.com/yahoo/open_nsfw) caffe model, it helps mods narrow down users that have NSFW content within their profiles.(The caffe model currently used has been trained on an additional 400GB of drawn NSFW images, such as hentai.). The docker image used is based off the one used in [nsfw-docker](https://github.com/nikos-glikis/nsfw-docker).
 
 <p align="center">
   <img src="https://fuwafuwa.wtf/smug.jpeg">
@@ -12,6 +11,10 @@ api.json
 =============
 - REPLACE '__REPLACE WITH ACCESS TOKEN__' with your own API key from https://anilist.co/api/v2/oauth/authorize?client_id=2861&response_type=token
   - Note: Private profiles will not be visible to non-mod users.
+
+.env
+=============
+- Add your discord bot token after '__DISCORD_TOKEN=__'
 
 FUNCTIONAL
 =============
@@ -30,6 +33,8 @@ WORK IN PROGRESS (TO SOME EXTENT FUNCTIONAL)
 =============
 - profile_about_name_swear.py pulls words from words.json and looks for them in profile name and about me. MUST ENTER PAGE NUMBER TO WORK.
 
+-Porting to Discord, since instead of requests I need to use aiohttp and a few other async functions.
+
 TO DO
 =============
 - Scan activity for swear words.
@@ -39,7 +44,7 @@ TO DO
 - Scan messages for nsfw images.
 - Scan profile, messages, activity for illegal links/streaming links.
 - Scan for bots.
-- Port to discord bot when everything is finished.
+
 
 GOOGLE COLABORATORY VERSION (to show all profile images on one page.) ( [link](https://colab.research.google.com/drive/1TbAelG8k6txJD_YR66h-_5XxXCuEcCJG) )
 =============
