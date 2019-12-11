@@ -11,6 +11,7 @@ jsonify = json.loads(page)
 #print()
 #print()
 abc = jsonify.get('predictions',{})
+print(abc)
 query1 = abc[0]
 query2 = abc[1]
 nsfw = ["hentai", "sexy", "porn"]

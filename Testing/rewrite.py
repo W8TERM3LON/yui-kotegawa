@@ -8,8 +8,8 @@ url = "https://graphql.anilist.co/"
 accessToken = json.loads(open(os.path.join('', 'api.json')).read())
 
 #User input
-startpage = int(input('Enter start page number -->'))
-stoppage = int(input('Enter page number to stop at -->'))
+startpage = int(1)
+stoppage = int(2)
 
 #Print Starting prompt.
 print('         ------STARTING------')
@@ -24,7 +24,23 @@ while startpage < stoppage:
 
     #POST request parameters.
     response = requests.request("POST", url, data=payload, headers=headers)
-    response = response.text
-    response = json.loads(response)
+    response = response.json()
+    response = response.get('data', {})
+    response = response.get('Page', {})
+    response = response.get('users', {})
+#    print(response)
+    for person in response:
+        avatar = person.get('avatar').get('large')
+        if avatar == "https://s4.anilist.co/file/anilistcdn/user/avatar/large/default.png":
+            pass
+        else:
+            id = person.get('id', {})
+            print(avatar, id)
+    
+   
+   
+   
+   
+    #response = json.loads(response)
     #response = json.dumps(response, indent=4, sort_keys=True)
-    print(response['users'])
+    
